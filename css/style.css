@@ -1,0 +1,106 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.backGroundColorBody {
+  background-color: #d8c99bff;
+}
+.backGroundColorNav {
+  background-color: #273e47ff;
+}
+main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.patchwork {
+  display: flex;
+  padding: 10px;
+  width: 85rem;
+  height: calc(85rem * 0.56);
+  justify-content: space-around;
+  align-items: top;
+}
+.dimension {
+  display: none;
+  width: 60rem;
+  height: calc(60rem * 0.56);
+}
+.dimension1 {
+  display: none;
+  width: 30rem;
+  height: calc(30rem * 0.56);
+}
+.dimension2 {
+  display: none;
+  width: 15rem;
+  height: calc(15rem * 1.33);
+}
+
+@media screen and (min-width: 300px) { 
+  .dimension2 {
+    display: inline-block;
+  }
+}
+
+@media screen and (min-width: 760px) { 
+  .dimension1 {
+    display: inline-block;
+  }
+  .dimension2 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1020px) { 
+  .dimension {
+    display: inline-block;
+  }
+  .dimension1 {
+    display: none;
+  }
+}
+
+.nav-link {
+  color: #a4243bff;
+}
+li {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 5px 50px;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+}
+.navbar-brand {
+  padding: 5px 50px;
+}
+
+footer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  color: #a4243bff;
+  background-color: hsla(197, 29%, 22%, 1);
+  position: fixed; bottom: 0; left: 0; right: 0;
+  min-height: 50px;
+}
+.contactItem {
+  font-size: 15px;
+  font-weight: 700;
+}
+.listContact {
+  margin: 1rem;
+}
+.ressource {
+  color: #a4243bff;
+}
