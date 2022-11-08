@@ -8,9 +8,6 @@
   <link rel="stylesheet" href="/bootstrap-5.0.2-dist/css/bootstrap.min.css">
   <!--lien mon fichier CSS-->
   <link rel="stylesheet" href="/css/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
   <title>Street-Art à La Seyne sur Mer</title>
   <link rel="shortcut icon" href="/images/aerosolDePeinture1.ico" type="image/x-icon">
   <meta name="description" content="Le Street-Art est mis à l'honneur par la ville de La Seyne-sur-Mer (Var) avec 30 oeuvres graphiques monumentales">
@@ -23,7 +20,7 @@
         <a class="navbar-brand">
           <img  class="logo" src="/images/gettyimages-1003206602-612x612.jpg" alt="bombe aérosol de peinture"/>
         </a>
-        <!-- Links -->
+        
         <ul class="navbar-nav";>
           <li class="nav-item">
             <a class="nav-link active" href="accueil.html">Accueil</a>
@@ -38,16 +35,37 @@
       </div>
     </nav>
   </header>
-  <main class="row container-fluid col-12 col-s-12 col- mt-5 mb-0">
-    <div class="titreAccueil container-fluid col-12 col-s-12 col-">
-    <p class="mb-0 mt-5">Découvrez le Street-Art à La Seyne-sur-Mer</p>
+  <main class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center">
+          <img src="/images2/15.1.Eteins-ton-cran-ConvertImage.jpg" class="d-block w-75"  alt="...">
+        </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex justify-content-center">
+          <img src="/images2/15.2.Eteins-ton-cran-ConvertImage.jpg" class="d-block w-75" alt="...">
+        </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <div class="patchwork container-fluid col-12 col-s-12 col- mt-1">
-      <img src="/images/patchwork.png" class="dimension" alt="patchworkPhotosStreetArt">
-      <img src="/images/patchwork50.png" class="dimension1" alt="patchworkPhotosStreetArt">
-      <img src="/images/P1040319-compressed.jpg" class="dimension2" alt="chienAssis" >
-    </div>
-    
+  </div>
+</div>
   </main>
   <footer class="footer">
     <div class="contact">

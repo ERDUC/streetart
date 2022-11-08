@@ -1,11 +1,26 @@
 html {
   height: 100%;
 }
-body {
+/*body {
   min-height: 100%;
   margin: 0;
   padding: 0;
   position: relative;
+  align-items: center;
+}*/
+
+body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
 }
 
 .backGroundColorBody {
@@ -14,19 +29,63 @@ body {
 .backGroundColorNav {
   background-color: #273e47ff;
 }
-main {
+header {
+  position: fixed; top: 0; left: 0; right: 0;
+  z-index: 100;
+} 
+/*main {
   display: flex;
+  align-self: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  margin: 60px 0px 60px 0px;
+  border: solid 2px black;
+  position: absolute;
+}*/
+
+main {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  position: absolute;
+}
+
+.titreAccueil {
+  width: 85rem;
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto; 
+  text-align: center;
+  font-size: 3em;
+  font-family: 'Permanent Marker', cursive;
+}
+
+.patchwork {
+  display:flex;
+  padding: 10px;
+  /*width: 70rem;
+  height: calc(70rem * 0.56);*/
+  width: 100%;
+  max-height: fit-content;
   justify-content: space-around;
   align-items: center;
-  padding: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto; 
 }
-.patchwork {
-  display: flex;
-  padding: 10px;
-  width: 85rem;
-  height: calc(85rem * 0.56);
-  justify-content: space-around;
-  align-items: top;
+
+@media screen and (max-width: 550px) {
+  p {
+  font-size: medium;
+  padding-top: 4em;
+  } 
+  .main {
+  margin-top: 200px !important;
+  margin-left: auto;
+  margin-right: auto; 
+  }
 }
 .dimension {
   display: none;
@@ -46,13 +105,22 @@ main {
 
 @media screen and (min-width: 300px) { 
   .dimension2 {
-    display: inline-block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  main {
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 760px) { 
   .dimension1 {
-    display: inline-block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
   .dimension2 {
     display: none;
@@ -61,7 +129,9 @@ main {
 
 @media screen and (min-width: 1020px) { 
   .dimension {
-    display: inline-block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
   }
   .dimension1 {
     display: none;
@@ -87,7 +157,7 @@ li {
 footer {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: #a4243bff;
   background-color: hsla(197, 29%, 22%, 1);
@@ -104,3 +174,41 @@ footer {
 .ressource {
   color: #a4243bff;
 }
+.carousel-inner {
+  /*display: flex;
+  margin-top: 80px;
+  padding: 10px;
+  width: 50rem;
+  height: calc(50rem * 0.56);*/
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(189, 99, 47, 1);
+}
+
+#carouselExampleIndicators {
+  display: flex;
+  margin-top: 15rem;
+  margin-bottom: 10rem;
+  padding: 10px;
+}
+
+.card {
+  background-color: #d8973cff;
+}
+
+.divGraff {
+  /*justify-content: center;
+  align-items: center;*/
+  margin-top: 15em;
+  margin-bottom: 15em;
+}
+.row {
+  align-items: center;
+  justify-content: center;
+}
+
+.contactItem {
+  display: inline-block;
+}
+
+
