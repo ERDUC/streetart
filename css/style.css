@@ -1,13 +1,6 @@
 html {
   height: 100%;
 }
-/*body {
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  align-items: center;
-}*/
 
 body {
   display: -webkit-box;
@@ -26,23 +19,15 @@ body {
 .backGroundColorBody {
   background-color: #d8c99bff;
 }
+
 .backGroundColorNav {
   background-color: #273e47ff;
 }
+
 header {
   position: fixed; top: 0; left: 0; right: 0;
   z-index: 100;
 } 
-/*main {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  margin: 60px 0px 60px 0px;
-  border: solid 2px black;
-  position: absolute;
-}*/
 
 main {
   -webkit-box-flex: 1;
@@ -65,8 +50,6 @@ main {
 .patchwork {
   display:flex;
   padding: 10px;
-  /*width: 70rem;
-  height: calc(70rem * 0.56);*/
   width: 100%;
   max-height: fit-content;
   justify-content: space-around;
@@ -87,16 +70,19 @@ main {
   margin-right: auto; 
   }
 }
+
 .dimension {
   display: none;
-  width: 60rem;
-  height: calc(60rem * 0.56);
+  width: 45rem;
+  height: calc(45rem * 0.56);
 }
+
 .dimension1 {
   display: none;
   width: 30rem;
   height: calc(30rem * 0.56);
 }
+
 .dimension2 {
   display: none;
   width: 15rem;
@@ -136,20 +122,28 @@ main {
   .dimension1 {
     display: none;
   }
+  main {
+    min-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .nav-link {
   color: #a4243bff;
 }
+
 li {
   font-size: 20px;
   font-weight: 700;
   padding: 5px 50px;
 }
+
 .logo {
   width: 50px;
   height: 50px;
 }
+
 .navbar-brand {
   padding: 5px 50px;
 }
@@ -164,22 +158,20 @@ footer {
   position: fixed; bottom: 0; left: 0; right: 0;
   min-height: 50px;
 }
+
 .contactItem {
   font-size: 15px;
   font-weight: 700;
 }
+
 .listContact {
   margin: 1rem;
 }
+
 .ressource {
   color: #a4243bff;
 }
 .carousel-inner {
-  /*display: flex;
-  margin-top: 80px;
-  padding: 10px;
-  width: 50rem;
-  height: calc(50rem * 0.56);*/
   justify-content: center;
   align-items: center;
   background-color: rgba(189, 99, 47, 1);
@@ -197,18 +189,59 @@ footer {
 }
 
 .divGraff {
-  /*justify-content: center;
-  align-items: center;*/
+  justify-content: center;
+  align-items: center;
   margin-top: 15em;
   margin-bottom: 15em;
-}
-.row {
-  align-items: center;
-  justify-content: center;
 }
 
 .contactItem {
   display: inline-block;
 }
+
+.author {
+  font-family: 'Permanent Marker', cursive;
+  font-weight: 600;
+  font-size: medium;
+}
+
+.icon {
+  font-size: 10px;
+}
+
+a span.infobulle {
+  position:absolute;
+  margin-top:25px;
+  margin-left:-100px;
+  color:#fff;
+  background:rgba(0, 0, 0, 0.5);
+  padding:25px;
+  border-radius:3px;
+  transform:scale(0) rotate(-180deg);
+  transition:all .25s;
+  opacity:0;
+}
+
+a:hover span.infobulle, a:focus span.infobulle {
+transform:scale(1) rotate(0);
+opacity:1;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15em;
+}
+
+.flex-container >div {
+  width: 100%;
+  margin: auto;
+}
+
+.localisation {
+  text-align: center;
+  padding: 1em;
+}
+
 
 
